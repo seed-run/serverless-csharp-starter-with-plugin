@@ -1,0 +1,12 @@
+service: serverless-csharp-starter-with-plugin
+
+provider:
+  name: aws
+  runtime: dotnetcore2.1
+
+plugins:
+  - serverless-dotnet
+
+functions:
+  hello:
+    handler: CsharpHandlers::AwsDotnetCsharp.Handler::Hello
